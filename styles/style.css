@@ -1,0 +1,39 @@
+:root {
+  --primary-color: blue;
+}
+h1,
+h2,
+h3 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.hero {
+  background-image: url("image/website-hw4.svg");
+  text-align: center;
+  padding: 47px auto;
+  margin: 48px 0 100px 0;
+}
+.hero h1 {
+  color: black;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 95.21 px;
+  margin-bottom: 0;
+}
+.hero h2 {
+  font-size: 24px;
+  font-weight: 700px;
+  line-height: 35px;
+  margin: 0;
+}
+.collection-btn-section {
+  margin-top: 45px;
+}
+.collection-btn {
+  background-color: deeppink;
+  color: white;
+  text-decoration: none;
+  padding: 15px 13px;
+}
+body {
+}
