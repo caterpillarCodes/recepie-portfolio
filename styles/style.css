@@ -1,9 +1,11 @@
 :root {
   --font-fm: "Nunito", sans-serif;
+  --primary-color: rgba(102, 46, 237, 1);
+  --secondray-color: rgba(39, 33, 66, 1);
 }
 body {
   font-family: var(--font-fm);
-  color: rgba(39, 33, 66, 1);
+  color: var(--secondray-color);
 }
 /*============
      navbar
@@ -14,23 +16,22 @@ body {
   align-items: center;
   width: 1160px;
   margin: 48px 140px 62px 140px;
-  border: 1px red solid;
 }
 .Recipe-navbar-nav {
   margin-left: 40px;
 }
 .Recipe-navbar-brand a {
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 800;
   text-decoration: none;
-  color: rgba(39, 33, 66, 1);
+  color: var(--secondray-color);
 }
 .Recipe-navbar-nav a {
   font-size: 16px;
   font-weight: 700;
   text-decoration: none;
-  color: rgba(39, 33, 66, 1);
-  margin-left: 10px;
+  color: var(--secondray-color);
+  margin-left: 32px;
 }
 a.active {
   color: rgba(102, 46, 237, 1);
@@ -41,6 +42,7 @@ a.active {
 .hero {
   text-align: center;
   margin-top: 62px;
+  margin-bottom: 100px;
   padding: 47px 0;
   color: #ffffff;
   background-image: linear-gradient(
@@ -66,7 +68,7 @@ a.active {
      تصویر غذا و عنوان
 ==========================*/
 .container {
-  margin: 100px 140px;
+  margin: 50px 140px;
   padding: 0;
   max-width: 1160px;
 }
@@ -76,9 +78,24 @@ a.active {
 .roww {
   display: flex;
   justify-content: space-around;
+  margin: 50px 0;
 }
 h3.article-title {
   font-size: 28px;
   font-weight: 700;
   margin-top: 20px;
+}
+/*=======================
+       footer
+ ======================*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 0 0 0;
+  background-color: rgba(249, 247, 254, 1);
+  padding: 40px 140px;
+}
+.copyright p {
+  color: var(--secondray-color);
 }
