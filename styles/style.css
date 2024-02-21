@@ -56,7 +56,8 @@ a.active {
   background-position: center;
   background-size: cover;
 }
-.hero h1 {
+.hero h1,
+.aboutme-section h1 {
   font-size: 72px;
   font-weight: 700;
 }
@@ -68,7 +69,7 @@ a.active {
 /*=========================
      تصویر غذا و عنوان
 ==========================*/
-.container {
+.homepage-container {
   margin: 50px auto;
   padding: 0;
 }
@@ -86,6 +87,63 @@ h3.article-title {
   margin-top: 20px;
 }
 /*=======================
+     about me page
+=======================*/
+.container {
+  max-width: 1160px;
+}
+.aboutme-section h1 {
+  margin: 26px auto 126px auto;
+}
+.aboutme-article {
+  padding: 0 100px 100px 100px;
+}
+.aboutme-article-text {
+  margin-left: 40px;
+}
+
+.aboutme-article h2 {
+  margin-bottom: 36px;
+  font-size: 64px;
+  font-weight: 700px;
+}
+.aboutme-article .aboutme-article-text {
+  padding: 62px 0px;
+}
+.aboutme-article .aboutme {
+  margin-bottom: 52px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.aboutme-article .follow-me {
+  font-size: 18px;
+  font-weight: 700;
+}
+.aboutme-article .follow-me a {
+  margin-left: 30px;
+}
+.cards-row {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px auto;
+}
+.card {
+  margin-left: 40px;
+  border: none;
+}
+.card img {
+  margin-bottom: 20px;
+}
+.card-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.card p {
+  font-size: 16px;
+  font-weight: 400;
+}
+/*=======================
        footer
  ======================*/
 footer {
@@ -95,6 +153,9 @@ footer {
   margin: 100px 0 0 0;
   background-color: rgba(249, 247, 254, 1);
   padding: 40px 140px;
+}
+.social-media-address a {
+  margin-left: 30px;
 }
 .copyright p {
   color: var(--secondray-color);
@@ -127,7 +188,7 @@ footer {
     font-size: 12px;
   }
 
-  .container {
+  .homepage-container {
     padding: 0;
     margin: 20px auto;
     max-width: 60%;
@@ -152,6 +213,44 @@ footer {
   }
   .article img {
     order: 3;
+  }
+  .cards-row {
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto;
+  }
+  .aboutme-article-text {
+    margin-left: 0;
+    text-align: center;
+  }
+  .aboutme-section h1 {
+    margin: 34px auto 5px auto;
+  }
+  .aboutme-article {
+    padding: 0;
+  }
+  .aboutme-article-text {
+    margin-left: 0;
+  }
+  .aboutme-article .aboutme {
+    margin-bottom: 38px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .aboutme-article h2 {
+    margin-bottom: 36px;
+    font-size: 58px;
+    font-weight: 700px;
+  }
+  .aboutme-article .aboutme-article-text {
+    padding: 32px 0px;
+  }
+  .aboutme-article .aboutme-article-text .aboutme-sm-image {
+    width: 360px;
+    margin: 10px auto;
+  }
+  .favorite-recipe {
+    margin-top: 32px;
   }
   footer {
     display: none;

@@ -4,7 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/styles/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
     <nav class="Recipe-navbar">
@@ -12,22 +24,81 @@
         <a href="#">SheCodes</a>
       </div>
       <div class="Recipe-navbar-nav">
-        <a class="Home-nav-link" href="#">Home</a>
+        <a class="Home-nav-link" href="index.html">Home</a>
         <a class="About-nav-link active" href="About.html">About</a>
         <a class="Recipe-nav-link" href="Recipe.html">Recipe</a>
         <a class="Contact-nav-link" href="Contact.html">Contact</a>
       </div>
     </nav>
-    <h1>About Me</h1>
-    <div class="aboutme-article">
-      <img src="/image/Rectangleaboutme.png" alt="" />
+    <div class="aboutme-section">
+      <h1 class="text-center">About Me</h1>
+      <div class="container">
+        <div class="aboutme-article">
+          <div class="row">
+            <div class="col-lg-6">
+              <img
+                class="aboutme-article-image d-none d-lg-block"
+                src="/image/Rectangleaboutme.png"
+                alt=""
+              />
+            </div>
+            <div class="col-lg-6">
+              <div class="aboutme-article-text">
+                <img
+                  class="aboutme-sm-image d-block d-lg-none"
+                  src="/image/Rectangleaboutme.png"
+                  alt=""
+                />
+                <h2>Shelly White</h2>
+                <p class="aboutme">
+                  Nisl faucibus quis urna nibh ut amet diam suscipit pretium
+                  massa sollicitudin in risus in sagittis nisl faucibus quis
+                  urna nibh ut amet diam suscipit pretium massa, sollicitudin in
+                  risus in. Sagittis.
+                </p>
+                <p class="follow-me">
+                  Follow me:
+                  <a href=""><img src="image/F.png" alt="" /></a>
+                  <a href=""><img src="image/insta.png" alt="" /></a>
+                  <a href=""><img src="image/in.png" alt="" /></a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-      <p>
-        Nisl faucibus quis urna nibh ut amet diam suscipit pretium massa
-        sollicitudin in risus in sagittis nisl faucibus quis urna nibh ut amet
-        diam suscipit pretium massa, sollicitudin in risus in. Sagittis.
-      </p>
+        <div class="favorite-recipe">
+          <h2 class="text-center">Favorite Recipe</h2>
+          <div class="cards-row">
+            <div class="card">
+              <img src="/image/Rectangle 110.png" alt="food" />
+              <h3 class="card-title">Wet Vegetable Spring Rolls</h3>
+              <p>
+                Id ac lorem maecenas rhoncus lobortis turpis morbi. Id ut
+                lobortis consectetur volutpat commodo mi suspendisse odio.
+              </p>
+            </div>
+            <div class="card">
+              <img src="/image/Rectangle 110.png" alt="food" />
+              <h3 class="card-title">Wet Vegetable Spring Rolls</h3>
+              <p>
+                Id ac lorem maecenas rhoncus lobortis turpis morbi. Id ut
+                lobortis consectetur volutpat commodo mi suspendisse odio.
+              </p>
+            </div>
+            <div class="card">
+              <img src="/image/Rectangle 110.png" alt="food" />
+              <h3 class="card-title">Wet Vegetable Spring Rolls</h3>
+              <p>
+                Id ac lorem maecenas rhoncus lobortis turpis morbi. Id ut
+                lobortis consectetur volutpat commodo mi suspendisse odio.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
     <footer>
       <div class="brand-logo">
         <img src="/image/She Codes.png" alt="logo" />
