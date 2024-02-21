@@ -21,7 +21,7 @@ body {
 .Recipe-navbar-nav {
   margin-left: 40px;
 }
-.Recipe-navbar-brand a {
+.brand-logo a {
   font-size: 32px;
   font-weight: 900;
   text-decoration: none;
@@ -57,7 +57,10 @@ a.active {
   background-size: cover;
 }
 .hero h1,
-.aboutme-section h1 {
+.aboutme-section h1,
+.recipe-collection-h1,
+.aboutme-sm-image,
+.contact-us-h1 {
   font-size: 72px;
   font-weight: 700;
 }
@@ -70,6 +73,7 @@ a.active {
      تصویر غذا و عنوان
 ==========================*/
 .homepage-container {
+  width: 1160px;
   margin: 50px auto;
   padding: 0;
 }
@@ -89,8 +93,10 @@ h3.article-title {
 /*=======================
      about me page
 =======================*/
-.container {
+.aboutme-section {
   max-width: 1160px;
+  display: block;
+  margin: 0 auto;
 }
 .aboutme-section h1 {
   margin: 26px auto 126px auto;
@@ -144,6 +150,92 @@ h3.article-title {
   font-weight: 400;
 }
 /*=======================
+  Recipe Collection page
+========================*/
+.recipe-collection-h1 {
+  margin-bottom: 126px;
+}
+.recepie-collection-container {
+  max-width: 760px;
+  display: block;
+  margin: 0 auto;
+}
+
+.recipe-card {
+  margin-bottom: 60px;
+  padding: 0;
+}
+.recipe-card row {
+  width: 760px;
+}
+.recipe-card img {
+  width: 760px;
+  margin-bottom: 42px;
+}
+.food-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 50px;
+  margin-bottom: 32px;
+}
+.subjects {
+  padding-bottom: 25px;
+  margin-bottom: 38px;
+}
+.subjects .col {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  border-bottom: 3px dashed #67d5d2;
+  padding-bottom: 25px;
+}
+.ingredient {
+  padding-bottom: 10px;
+  border-bottom: 2px dashed #67d5d2;
+  font-size: 18;
+  font-weight: 400;
+}
+.step {
+  margin: 40px;
+}
+.step h3 {
+  font-size: 18px;
+  font-weight: 800;
+  color: #f65282;
+}
+.step .content {
+  font-size: 18px;
+  font-weight: 400;
+}
+/*======================
+       contactus-page
+=======================*/
+.contactus-page {
+}
+.contact-us-h1 {
+  margin: 73px 0 98px 0;
+}
+.contact-page-image {
+  max-width: 460px;
+}
+.contact-page-info {
+  padding: 26px;
+}
+.contact-page-info h2 {
+  color: var(--primary-color);
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.contact-page-info .info {
+  display: flex;
+  justify-items: center;
+  margin-bottom: 15px;
+}
+.contact-page-info .info i {
+  margin-right: 18px;
+}
+/*======================
        footer
  ======================*/
 footer {
@@ -156,6 +248,8 @@ footer {
 }
 .social-media-address a {
   margin-left: 30px;
+  text-decoration: none;
+  color: var(--secondray-color);
 }
 .copyright p {
   color: var(--secondray-color);
@@ -254,5 +348,15 @@ footer {
   }
   footer {
     display: none;
+  }
+}
+@media (min-width: 900px) {
+  .contactus-page .container {
+    display: flex;
+    justify-content: center;
+  }
+  .contact-page-info .info {
+    margin-bottom: 50px;
+    align-items: baseline;
   }
 }
