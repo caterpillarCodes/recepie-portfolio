@@ -76,6 +76,9 @@ a.active {
   margin: 50px auto;
   padding: 0;
 }
+.homepage-container img {
+  max-width: 560px;
+}
 .article {
   margin: 0 20px;
 }
@@ -84,8 +87,8 @@ a.active {
   justify-content: space-around;
   margin: 50px 0;
 }
-h3.article-title {
-  font-size: 28px;
+.article-title {
+  font-size: 32px;
   font-weight: 700;
   margin-top: 20px;
 }
@@ -132,19 +135,20 @@ h3.article-title {
   justify-content: space-around;
   margin: 40px auto;
 }
-.card {
+.favorite-card {
   margin-left: 40px;
   border: none;
 }
-.card img {
+.favorite-card img {
   margin-bottom: 20px;
+  height: 350px;
 }
-.card-title {
+.favorite-card-title {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 20px;
 }
-.card p {
+.favorite-card p {
   font-size: 16px;
   font-weight: 400;
 }
