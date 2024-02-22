@@ -58,7 +58,6 @@ a.active {
 }
 .hero h1,
 .aboutme-section h1,
-.recipe-collection-h1,
 .aboutme-sm-image,
 .contact-us-h1 {
   font-size: 72px;
@@ -152,60 +151,43 @@ h3.article-title {
 /*=======================
   Recipe Collection page
 ========================*/
-.recipe-collection-h1 {
-  margin-bottom: 126px;
-}
-.recepie-collection-container {
+.recipe-collection-container {
   max-width: 760px;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 60px auto;
+  padding: 10px;
 }
-
-.recipe-card {
-  margin-bottom: 60px;
-  padding: 0;
-}
-.recipe-card row {
-  width: 760px;
-}
-.recipe-card img {
-  width: 760px;
-  margin-bottom: 42px;
+.recipe-collection-h1 {
+  margin: 26px auto 48px auto;
+  font-size: 48px;
+  font-weight: 700;
 }
 .food-title {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 50px;
+  margin-top: 14px;
   margin-bottom: 32px;
+  font-weight: 700;
 }
-.subjects {
-  padding-bottom: 25px;
-  margin-bottom: 38px;
+.recipe-collection-container .ingredient {
+  border-bottom: 2px dashed #67d5d2;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
-.subjects .col {
+.recipe-collection-container h3 {
   font-size: 24px;
   font-weight: 700;
-  line-height: 32px;
   border-bottom: 3px dashed #67d5d2;
   padding-bottom: 25px;
+  margin-top: 36px;
+  margin-bottom: 32px;
 }
-.ingredient {
-  padding-bottom: 10px;
-  border-bottom: 2px dashed #67d5d2;
-  font-size: 18;
-  font-weight: 400;
+.recipe-collection-container .step {
+  margin-top: 30px;
 }
-.step {
-  margin: 40px;
-}
-.step h3 {
+.recipe-collection-container .step h4 {
   font-size: 18px;
   font-weight: 800;
   color: #f65282;
-}
-.step .content {
-  font-size: 18px;
-  font-weight: 400;
+  line-height: 1.5;
 }
 /*======================
        contactus-page
@@ -358,5 +340,20 @@ footer {
   .contact-page-info .info {
     margin-bottom: 50px;
     align-items: baseline;
+  }
+  .recipe-collection-container .recipe-card-image {
+    width: 760px;
+  }
+  .recipe-collection-container .recipe-row {
+    display: flex;
+  }
+  .recipe-row .column {
+    width: 50%;
+  }
+  .recipe-collection-container .step {
+    margin: 40px;
+  }
+  .column .method {
+    padding-left: 40px;
   }
 }
