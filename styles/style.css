@@ -92,6 +92,9 @@ a.active {
   font-weight: 700;
   margin-top: 20px;
 }
+.article-title:hover {
+  color: var(--primary-color);
+}
 /*=======================
      about me page
 =======================*/
@@ -125,6 +128,7 @@ a.active {
   font-weight: 400;
 }
 .aboutme-article .follow-me {
+  display: flex;
   font-size: 18px;
   font-weight: 700;
 }
@@ -181,6 +185,9 @@ a.active {
   padding-bottom: 25px;
   margin-top: 36px;
   margin-bottom: 32px;
+}
+div.recipe-row {
+  margin-bottom: 80px;
 }
 .recipe-collection-container .step {
   margin-top: 30px;
@@ -314,6 +321,9 @@ footer {
     margin-bottom: 38px;
     font-size: 18px;
     font-weight: 400;
+  }
+  .aboutme-article .follow-me {
+    flex-direction: column;
   }
   .aboutme-article h2 {
     margin-bottom: 36px;
