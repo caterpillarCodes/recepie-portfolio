@@ -241,7 +241,7 @@ footer {
   align-items: center;
   margin: 100px 0 0 0;
   background-color: rgba(249, 247, 254, 1);
-  padding: 40px 140px 0 140px;
+  padding: 40px 140px;
 }
 .social-media-address a {
   margin-left: 30px;
@@ -251,10 +251,7 @@ footer {
 .copyright p {
   color: var(--secondray-color);
 }
-.github {
-  background-color: rgba(249, 247, 254, 1);
-  padding: 20px;
-}
+
 /*=====================================
         media query
 =====================================*/
