@@ -11,6 +11,8 @@ body {
 /*============
      navbar
   ============*/
+nav {
+}
 .Recipe-navbar {
   display: flex;
   justify-content: space-between;
@@ -33,6 +35,9 @@ body {
   text-decoration: none;
   color: var(--secondray-color);
   margin-left: 32px;
+}
+.Recipe-navbar-nav a:hover {
+  color: var(--primary-color);
 }
 a.active {
   color: rgba(102, 46, 237, 1);
@@ -76,8 +81,7 @@ a.active {
   margin: 50px auto;
   padding: 0;
 }
-.homepage-container img {
-  max-width: 560px;
+.homepage-container a img {
 }
 .article {
   margin: 0 20px;
@@ -137,13 +141,15 @@ a.active {
   justify-content: space-around;
   margin: 40px auto;
 }
+.favorite-recipe {
+  display: block;
+}
 .favorite-card {
-  margin-left: 40px;
+  max-width: 326.517px;
   border: none;
 }
 .favorite-card img {
   margin-bottom: 20px;
-  height: 350px;
 }
 .favorite-card-title {
   font-size: 24px;
@@ -294,11 +300,8 @@ footer {
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 15px;
-    order: 0;
   }
-  .article img {
-    order: 3;
-  }
+
   .cards-row {
     display: flex;
     flex-direction: column;
@@ -336,6 +339,10 @@ footer {
   .aboutme-article .aboutme-article-text .aboutme-sm-image {
     width: 360px;
     margin: 10px auto;
+  }
+  .favorite-card {
+    margin-left: 20px;
+    border: none;
   }
   .favorite-recipe {
     margin-top: 32px;
